@@ -1,0 +1,163 @@
+<!Doctype html>
+<html lang="en">
+<head>
+
+    <title>
+        
+    </title>
+    <style>
+        .container{
+        display:grid;
+        grid-template-columns:repeat(4,1fr);
+        grid-template-rows:repeat(1,1fr) ;
+        grid-gap:10px;
+        grid-column-start: span 2;
+        background-color:aquamarine;
+        padding:5px;
+        border:2px solid #f76707;
+         
+        }
+        .grid-container1{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:1;
+            grid-column-end:1;
+            grid-row-start:1;
+            grid-row-end: 3;
+            font-size:30px;
+        }
+        .grid-container2{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:1;
+            grid-column-end:1;
+            grid-row-start:3;
+            grid-row-end: 5;
+
+            font-size:30px;
+        }
+        .grid-container3{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:2;
+            grid-column-end:3;
+            grid-row-start:1;
+            grid-row-end: 1;
+
+            font-size:30px;
+        }
+        .grid-container4{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:3;
+            grid-column-end:4;
+            grid-row-start:1;
+            grid-row-end: 1;
+
+            font-size:30px;
+        }
+        .grid-container5{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:4;
+            grid-column-end:5;
+            grid-row-start:1;
+            grid-row-end: 3;
+
+            font-size:30px;
+        }
+        .grid-container6{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:2;
+            grid-column-end:4;
+            grid-row-start:2;
+            grid-row-end: 4;
+
+            font-size:30px;
+        }
+        .grid-container7{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:2;
+            grid-column-end:3;
+            grid-row-start:4;
+            grid-row-end: 5;
+
+            font-size:30px;
+        }
+        .grid-container8{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:4;
+            grid-column-end:5;
+            grid-row-start:2;
+            grid-row-end: 4;
+
+            font-size:30px;
+        }
+        .grid-container9{
+            background-color:blue;
+            text-align:center;
+            grid-column-start:3;
+            grid-column-end:5;
+            grid-row-start:4;
+            grid-row-end:5;
+
+            font-size:30px;
+        }
+        
+        .nested{
+            border: 2px solid #ffec99;
+            border-radius: 5px;
+            background-color:black;
+            padding:1em;
+        }
+        .container > div {
+             border: 2px solid #ffa94d;
+             border-radius: 5px;
+             background-color:hsl(from color h s l);
+             padding: 1em;
+             color:bisque;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container1">1
+            
+        </div> 
+        
+        <div class="grid-container2">2
+            
+   </div>
+   
+   <div class="grid-container3">3
+
+   </div>
+   
+   <div class="grid-container4">4
+
+   </div>
+   
+   <div class="grid-container5">5
+
+   </div>
+   <div class="grid-container6">6
+
+   </div>
+   <div class="grid-container7">7
+
+   </div>
+   <div class="grid-container8">8
+
+       
+       
+</div>
+<div class="grid-container9">9
+</div>
+
+</div>
+</body>
+</html>
