@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title> </title>
+    <style></style>
+    <body>
+      <form onsubmit="return false;">
+        <label for="first number">Enter First Number</label>
+        <input type="number" id="first_number" /><br />
+        <label for="second number">Enter Second Number</label>
+        <input type="number" id="second_number" /><br />
+        <label for="calc">Calculator</label>
+        <select id="calc">
+          <option value="+">+</option>
+          <option value="-">-</option>
+          <option value="*">*</option>
+          <option value="/">/</option>
+        </select>
+        <button onclick="msubmit()">Submit</button>
+      </form>
+
+      <p id="paragraph"></p>
+      <script>
+        function msubmit() {
+          var a, b;
+          a = parseInt(document.getElementById("first_number").value);
+          b = parseInt(document.getElementById("second_number").value);
+          var abcde = document.getElementById("calc").value;
+          var c;
+          switch (abcde) {
+            case "+":
+              c = a + b;
+              break;
+            case "-":
+              c = a - b;
+              break;
+            case "*":
+              c = a * b;
+              break;
+            case "/":
+              c = a / b;
+              break;
+            default:
+              c = "invalid operation";
+          }
+          console.log(c);
+
+          document.getElementById("paragraph").innerHTML = "the answer" + c;
+        }
+      </script>
+    </body>
+  </head>
+</html>
